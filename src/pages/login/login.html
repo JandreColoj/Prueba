@@ -1,0 +1,47 @@
+<ion-content class="login-content" padding color="dark">
+<ion-row class="pad-1">
+</ion-row>
+
+<div class="login-box">
+
+  <ion-row>
+    <ion-col class="img-logo">
+      <img src="assets/imgs/logo1.png"/>
+    </ion-col>
+  </ion-row>
+  
+    <form (ngSubmit)="login()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+            <!--ion-list-->
+            <ion-item>
+                <ion-label floating>Usuario:</ion-label>
+                <ion-input type="text" name="usuario" [(ngModel)]="C.usuario" required ></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Contraseña:</ion-label>
+                <ion-input type="password" name="password" [(ngModel)]="C.password" required ></ion-input>
+            </ion-item> 
+          <!--/ion-list-->
+
+        </ion-col>
+      </ion-row>
+      
+      <ion-row padding>
+        <ion-col class="signup-col" padding>         
+            <button ion-button class="submit-btn" type="submit" color='MD_btn' [disabled]="!registerForm.form.valid" > 
+            <pre>INGRESAR</pre>
+            </button>
+            <!--button ion-button class="register-btn" block clear (click)="createAccount()">CREAR NUEVO USUARIO</button-->
+        </ion-col>
+      </ion-row>
+      
+    </form>
+</div>
+
+
+
+</ion-content>
+  
+  

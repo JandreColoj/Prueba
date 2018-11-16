@@ -1,0 +1,29 @@
+page-detalle {
+
+
+    .card-content{
+        //background: rgb(110, 102, 102);
+       // border: solid 1px rgb(7, 7, 7);
+        border-radius: 5px; 
+        border: solid 1px rgb(10, 10, 10); 
+        text-align: center;
+        padding:0;
+
+        b{
+            font-size: 25px;
+        }
+    }
+    .card{
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    
+    .form{
+        padding: 0;
+        margin: 0;
+        border: solid 1px  #7CB342;
+        border-radius: 10px;
+
+
+    }
+}

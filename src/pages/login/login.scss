@@ -1,0 +1,59 @@
+page-login {
+
+    font-family: "Helvetica";
+    overflow:hidden;
+
+    .pad-1{
+        min-height: 100px;
+    }
+
+    .img-logo{
+        width: 200px;
+        height: 100px;
+        text-align:center;
+    }
+
+    ion-content{
+         background-image: url("../assets/imgs/login.png"); 
+        // background-repeat: no-repeat;
+         background-attachment: fixed;
+
+    }
+
+    .login-box{
+        //background: rgba(0, 0, 0,0.7);
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+
+        ion-col{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    .item-md{
+        background: transparent;
+        color: rgba(14, 13, 13,0.9);
+    }
+
+    .label-md{
+        color: rgba(3, 3, 3, 0.9);
+    }
+
+    ion-label{
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .signup-col{       
+        text-align: center;
+
+        .submit-btn{
+            width: 70%;
+            height: 50px;
+        }
+
+    }
+
+}
+

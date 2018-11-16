@@ -1,0 +1,54 @@
+<ion-menu [content]="content" >
+  <ion-header>
+    <ion-toolbar>
+       <!--ion-img  [src]="assets/imgs/banner.jpg"></ion-img-->
+       <img src="assets/imgs/banner.jpg"/>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="content-menu">
+ 
+    <div class="menu_separador" *ngFor="let p of menu"  >
+        <ion-item-divider  color="MD_separador">
+            <h2> {{ p[0].cat_padre}}</h2>
+        </ion-item-divider>
+            
+        <ion-list class="menu">   
+            <ion-item menuClose ion-item *ngFor="let d of p"  (click)="openPage(d,d.id)">      
+                  {{ d.title}}
+            </ion-item>  
+        </ion-list>
+    </div>  
+
+    <ion-row >
+      <ion-col >
+        <button ion-button full round color='MD_btn' (click)="GetOut()" menuClose >SALIR</button>
+        <!--button ion-button class="register-btn" block clear (click)="createAccount()">CREAR NUEVO USUARIO</button-->
+      </ion-col>
+    </ion-row>
+
+
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+<!--ion-content>
+    <ion-list>
+      <ion-item *ngFor="let p of pages" text-wrap>
+        {{p.category}}
+        <ion-list>
+          <ion-item *ngFor="let s of p.subs" text-wrap>
+            {{s.subcategory}}
+            <ion-list>
+              <ion-item *ngFor="let m of s.manufactures" text-wrap>
+                {{m.manufacture}}
+              </ion-item>
+            </ion-list>
+          </ion-item>
+        </ion-list>
+      </ion-item>
+    </ion-list>
+  </ion-content-->

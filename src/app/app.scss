@@ -1,0 +1,78 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+    
+.menu ion-label{
+    font-family: 'Raleway', sans-serif;
+    color: #2b2c2b;
+    text-align: center;  
+    line-height: 20px;
+
+    h2{
+        color: #ffffff; 
+        padding: 0;
+        margin: 0;
+        font-weight: bold; 
+        border-radius: 0.5em;
+
+    }
+
+    .menu_separador{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.content-menu ion-item-divider{
+    text-align: center;  
+    line-height: 15px;
+}
+
+.toolbar-md{
+    padding: 0px;
+}
+
+.toolbar-background-md{
+    background: #fdfbfb;
+}
+
+.clssAlert{    
+    //font-family: 'Raleway', sans-serif;
+    background: rgba(54, 54, 54, 0.5);
+    text-align: center;
+
+    .alert-head{
+        border-radius: 0.5em;
+    }
+    .alert-button-group{
+        background: #66BB6A;//rgba(44, 44, 44, 0.9);
+        .button-inner{
+            color: #ffffff;
+        }
+    }
+
+    
+}
+
+.button-md-MD_btn{
+    min-height: 25px;
+    border-radius: 5px;
+    padding:15px 5px !important; 
+}
